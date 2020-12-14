@@ -1,0 +1,10 @@
+[Unit]
+Description=Gives a DHCP lease to the static wifi settings when ping doesn't work
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/ipv6_dhcp.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

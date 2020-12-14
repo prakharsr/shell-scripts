@@ -39,3 +39,5 @@ sudo ip a add $IP dev $INTERFACE
 sudo ip route add default via $GATEWAY dev $INTERFACE 
 
 echo "Script Completed\n"
+
+exit
